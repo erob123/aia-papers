@@ -16,7 +16,7 @@ packages = [{include = "aia-papers"}]
 python = "^3.11"
 
 # Core scientific stack
-numpy = "*"
+numpy = "<=1.26"
 pandas = "*"
 scikit-learn = "*"
 
@@ -42,6 +42,11 @@ jupyter = "*"
 ipykernel = "^6.29.5"
 torch = "^2.6.0"
 adapters = "^1.1.0"
+llvmlite = "^0.41.0"
+umap-learn = "^0.5.7"
+plotly = "^6.0.1"
+hdbscan = "^0.8.40"
+requests = "^2.32.3"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
