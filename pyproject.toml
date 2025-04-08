@@ -1,0 +1,48 @@
+[project]
+name = "aia-papers"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "erob123"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.poetry]
+packages = [{include = "aia-papers"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+# Core scientific stack
+numpy = "*"
+pandas = "*"
+scikit-learn = "*"
+
+# FAISS for similarity search (CPU version)
+faiss-cpu = "*"
+
+# Transformers + adapters for SPECTER2
+transformers = "*"
+
+# Plotting and network analysis
+matplotlib = "*"
+networkx = "*"
+pyvis = "*"
+
+# Scholar scraping
+scholarly = "*"
+
+# Gradio interface
+gradio = "^4.0"
+
+# Optional for notebooks
+jupyter = "*"
+ipykernel = "^6.29.5"
+torch = "^2.6.0"
+adapters = "^1.1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
